@@ -451,34 +451,34 @@ struct OrganicParticleSynthWidget : ModuleWidget {
 		addChild(createWidget<ScrewSilver>(Vec(box.size.x - 2 * RACK_GRID_WIDTH, RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
 
 		// 第一行：Vitality、Pitch、采样加载指示灯（右键菜单加载文件）
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(10, 38 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::VITALITY_PARAM));
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(20.48, 38 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::PITCH_PARAM));
+		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(9, 38 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::VITALITY_PARAM));
+		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(22, 38 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::PITCH_PARAM));
 		addChild(createLightCentered<SmallSimpleLight<GreenLight>>(mm2px(Vec(30.96, 38 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::SAMPLE_LOADED_LIGHT));
 
 		// 第二行：Grain Size、Density
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(10, 58 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::GRAIN_SIZE_PARAM));
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(20.48, 58 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::DENSITY_PARAM));
+		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(9, 59 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::GRAIN_SIZE_PARAM));
+		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(22, 59 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::DENSITY_PARAM));
 
 		// 第三行：Cutoff、Resonance
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(10, 78 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::CUTOFF_PARAM));
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(20.48, 78 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::RESONANCE_PARAM));
+		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(9, 80 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::CUTOFF_PARAM));
+		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(22, 80 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::RESONANCE_PARAM));
 
 		// 第四行：BPM、Volume
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(10, 98 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::BPM_PARAM));
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(20.48, 98 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::VOLUME_PARAM));
+		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(9, 101 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::BPM_PARAM));
+		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(22, 101 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::VOLUME_PARAM));
 
 		// 432Hz 指示灯（在按钮上方）
-		addChild(createLightCentered<SmallSimpleLight<GreenLight>>(mm2px(Vec(30.96, 88 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::IS432HZ_LIGHT));
+		addChild(createLightCentered<SmallSimpleLight<GreenLight>>(mm2px(Vec(30.96, 91 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::IS432HZ_LIGHT));
 		// 432Hz 开关（点击保持，再点击取消）
-		addParam(createParamCentered<Toggle432Button>(mm2px(Vec(30.96, 98 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::IS432HZ_PARAM));
+		addParam(createParamCentered<Toggle432Button>(mm2px(Vec(30.96, 101 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::IS432HZ_PARAM));
 
 		// 输入
-		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(10, 115 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::CLOCK_INPUT));
-		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(20.48, 115 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::VITALITY_CV_INPUT));
+		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(9, 115 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::CLOCK_INPUT));
+		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(22, 115 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::VITALITY_CV_INPUT));
 
 		// 输出
-		addOutput(createOutputCentered<PJ3410Port>(mm2px(Vec(10, 128 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::L_OUTPUT));
-		addOutput(createOutputCentered<PJ3410Port>(mm2px(Vec(20.48, 128 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::R_OUTPUT));
+		addOutput(createOutputCentered<PJ3410Port>(mm2px(Vec(9, 128 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::L_OUTPUT));
+		addOutput(createOutputCentered<PJ3410Port>(mm2px(Vec(22, 128 - VERTICAL_OFFSET_MM)), module, OrganicParticleSynth::R_OUTPUT));
 	}
 	
 	void appendContextMenu(ui::Menu* menu) override {
