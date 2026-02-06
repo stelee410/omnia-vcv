@@ -15,4 +15,5 @@ void init(Plugin* p) {
 	p->addModel(modelAmbientRandomSynth);
 	p->addModel(modelOrganicParticleSynth);
 	p->addModel(modelBuildupLooper);
+	p->addModel(modelWT_SURGE_X);
 }
