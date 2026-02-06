@@ -15,3 +15,4 @@ extern Model* modelChordPadSynth;
 extern Model* modelChordPluckSynth;
 extern Model* modelAmbientRandomSynth;
 extern Model* modelOrganicParticleSynth;
+extern Model* modelBuildupLooper;

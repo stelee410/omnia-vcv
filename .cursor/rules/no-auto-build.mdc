@@ -1,0 +1,12 @@
+---
+description: 不自动执行构建，由用户手动运行 build
+alwaysApply: true
+---
+
+# 构建由用户手动执行
+
+- **不要**在对话中自动执行项目的构建命令（如 `build.bat`、`make`、`./build.sh` 等）。
+- 修改代码或资源后，只说明需要用户自行构建即可，例如：「请在本机运行 `build.bat`（或 `make`）进行构建。」
+- 不主动在终端中运行 `make clean`、`make`、`make installdev` 或任何安装脚本，除非用户明确要求执行某条命令。
+
+用户会在需要时自己运行构建与安装。

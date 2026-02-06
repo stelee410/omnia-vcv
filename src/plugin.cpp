@@ -14,4 +14,5 @@ void init(Plugin* p) {
 	p->addModel(modelChordPluckSynth);
 	p->addModel(modelAmbientRandomSynth);
 	p->addModel(modelOrganicParticleSynth);
+	p->addModel(modelBuildupLooper);
 }
